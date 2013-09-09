@@ -1,9 +1,6 @@
 #!/usr/bin/perl
 
-package dd2json;
-BEGIN {
-  $dd2json::VERSION = '0.02';
-} # make PodWeaver happy
+package dd2json; # make PodWeaver happy
 
 use 5.010;
 use strict;
@@ -11,7 +8,7 @@ use warnings;
 
 use JSON;
 
-# VERSION
+our $VERSION = '0.03'; # VERSION
 
 undef $/;
 print to_json(eval(scalar <>));
@@ -20,6 +17,7 @@ print to_json(eval(scalar <>));
 #ABSTRACT: Convert Data::Dump to JSON serialization
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -28,7 +26,7 @@ dd2json - Convert Data::Dump to JSON serialization
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHOR
 
@@ -36,10 +34,9 @@ Steven Haryanto <stevenharyanto@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Steven Haryanto.
+This software is copyright (c) 2013 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

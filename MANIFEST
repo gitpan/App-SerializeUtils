@@ -1,9 +1,10 @@
-Build.PL
 Changes
 LICENSE
 MANIFEST
 MANIFEST.SKIP
+META.json
 META.yml
+Makefile.PL
 README
 bin/dd2json
 bin/dd2php
@@ -23,3 +24,4 @@ lib/App/SerializeUtils.pm
 t/00-compile.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t
+t/release-rinci.t

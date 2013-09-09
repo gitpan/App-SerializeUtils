@@ -1,19 +1,16 @@
 package App::SerializeUtils;
-BEGIN {
-  $App::SerializeUtils::VERSION = '0.02';
-}
 
-use 5.010;
+use 5.010001;
 use strict;
 use warnings;
 
-# VERSION
+our $VERSION = '0.03'; # VERSION
 
 1;
 #ABSTRACT: Utilities for serialization tasks
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -22,7 +19,7 @@ App::SerializeUtils - Utilities for serialization tasks
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -71,10 +68,9 @@ Steven Haryanto <stevenharyanto@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Steven Haryanto.
+This software is copyright (c) 2013 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
