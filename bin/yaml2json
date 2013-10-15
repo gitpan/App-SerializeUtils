@@ -9,7 +9,7 @@ use warnings;
 use YAML::Syck; $YAML::Syck::ImplicitTyping = 1;
 use JSON;
 
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 undef $/;
 print to_json(Load(scalar <>));
@@ -27,7 +27,7 @@ yaml2json - Convert YAML to JSON
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 

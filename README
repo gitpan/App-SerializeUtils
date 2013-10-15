@@ -2,7 +2,7 @@ NAME
     App::SerializeUtils - Utilities for serialization tasks
 
 VERSION
-    version 0.03
+    version 0.04
 
 SYNOPSIS
      $ script-that-produces-json | json2yaml

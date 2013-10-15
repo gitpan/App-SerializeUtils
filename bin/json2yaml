@@ -6,13 +6,13 @@ use 5.010;
 use strict;
 use warnings;
 
-use YAML::Syck; $YAML::Syck::ImplicitTyping = 1;
 use JSON;
+use YAML::Syck; $YAML::Syck::ImplicitTyping = 1;
 
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 undef $/;
-print Dump(from_json(scalar <>));
+print Dump(JSON->new->allow_nonref->decode(~~<>));
 
 1;
 #ABSTRACT: Convert JSON to YAML serialization
@@ -27,7 +27,7 @@ json2yaml - Convert JSON to YAML serialization
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 

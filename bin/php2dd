@@ -9,7 +9,7 @@ use warnings;
 use Data::Dump;
 use PHP::Serialization qw(unserialize);
 
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 undef $/;
 dd(unserialize(scalar <>));
@@ -27,7 +27,7 @@ php2dd - Convert PHP to Data::Dump serialization
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 

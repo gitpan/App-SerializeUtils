@@ -9,7 +9,7 @@ use warnings;
 use YAML::Syck; $YAML::Syck::ImplicitTyping = 1;
 use PHP::Serialization qw(unserialize);
 
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 undef $/;
 print Dump(unserialize(scalar <>));
@@ -27,7 +27,7 @@ php2yaml - Convert PHP to YAML serialization
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 

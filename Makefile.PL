@@ -17,19 +17,19 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "App-SerializeUtils",
   "EXE_FILES" => [
-    "bin/yaml2php",
-    "bin/dd2yaml",
-    "bin/yaml2json",
-    "bin/dd2json",
     "bin/yaml2dd",
-    "bin/pp-json",
-    "bin/php2yaml",
-    "bin/php2dd",
-    "bin/php2json",
-    "bin/dd2php",
-    "bin/json2yaml",
     "bin/json2dd",
-    "bin/json2php"
+    "bin/pp-json",
+    "bin/dd2json",
+    "bin/json2php",
+    "bin/php2dd",
+    "bin/yaml2php",
+    "bin/dd2php",
+    "bin/php2json",
+    "bin/yaml2json",
+    "bin/php2yaml",
+    "bin/dd2yaml",
+    "bin/json2yaml"
   ],
   "LICENSE" => "perl",
   "NAME" => "App::SerializeUtils",
@@ -39,8 +39,13 @@ my %WriteMakefileArgs = (
     "PHP::Serialization" => 0,
     "YAML::Syck" => 0
   },
-  "TEST_REQUIRES" => {},
-  "VERSION" => "0.03",
+  "TEST_REQUIRES" => {
+    "File::Spec" => 0,
+    "IO::Handle" => 0,
+    "IPC::Open3" => 0,
+    "Test::More" => 0
+  },
+  "VERSION" => "0.04",
   "test" => {
     "TESTS" => "t/*.t"
   }
