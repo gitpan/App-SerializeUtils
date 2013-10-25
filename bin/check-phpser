@@ -1,21 +1,23 @@
 #!/usr/bin/perl
 
-package json2yaml; # make PodWeaver happy
-
 use 5.010;
 use strict;
 use warnings;
 
-use JSON;
-use YAML::Syck; $YAML::Syck::ImplicitTyping = 1;
+use Data::Dump;
+use PHP::Serialization qw(unserialize);
 
 our $VERSION = '0.05'; # VERSION
 
-undef $/;
-print Dump(JSON->new->allow_nonref->decode(~~<>));
+eval {
+    undef $/;
+    unserialize(scalar <>);
+};
+die $@ if $@;
 
 1;
-#ABSTRACT: Convert JSON to YAML serialization
+#ABSTRACT: Convert PHP to Data::Dump serialization
+#PODNAME: check-phpser
 
 __END__
 
@@ -25,7 +27,7 @@ __END__
 
 =head1 NAME
 
-json2yaml - Convert JSON to YAML serialization
+check-phpser - Convert PHP to Data::Dump serialization
 
 =head1 HOMEPAGE
 

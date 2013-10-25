@@ -1,21 +1,25 @@
 #!/usr/bin/perl
 
-package json2yaml; # make PodWeaver happy
+#package check_yaml; # make PodWeaver happy
 
 use 5.010;
 use strict;
 use warnings;
 
-use JSON;
-use YAML::Syck; $YAML::Syck::ImplicitTyping = 1;
+use YAML::Syck;
 
 our $VERSION = '0.05'; # VERSION
 
-undef $/;
-print Dump(JSON->new->allow_nonref->decode(~~<>));
+eval {
+    undef $/;
+    Load(~~<>);
+};
+
+die $@ if $@;
 
 1;
-#ABSTRACT: Convert JSON to YAML serialization
+#ABSTRACT: Check YAML syntax
+#PODNAME: check-yaml
 
 __END__
 
@@ -25,7 +29,11 @@ __END__
 
 =head1 NAME
 
-json2yaml - Convert JSON to YAML serialization
+check-yaml - Check YAML syntax
+
+=head1 DESCRIPTION
+
+Check YAML syntax. Prints nothing if YAML syntax is okay.
 
 =head1 HOMEPAGE
 

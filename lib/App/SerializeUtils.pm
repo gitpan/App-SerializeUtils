@@ -4,7 +4,7 @@ use 5.010001;
 use strict;
 use warnings;
 
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 1;
 #ABSTRACT: Utilities for serialization tasks
@@ -13,13 +13,11 @@ __END__
 
 =pod
 
+=encoding utf-8
+
 =head1 NAME
 
 App::SerializeUtils - Utilities for serialization tasks
-
-=head1 VERSION
-
-version 0.04
 
 =head1 SYNOPSIS
 
@@ -33,24 +31,35 @@ For converting between serializable formats (each of these take input from stdin
 and output to stdout):
 
  dd2json
- dd2php
+ dd2phpser
  dd2yaml
 
  json2dd
- json2php
+ json2phpser
  json2yaml
 
- php2dd
- php2json
- php2yaml
+ phpser2dd
+ phpser2json
+ phpser2yaml
 
  yaml2dd
  yaml2json
- yaml2php
+ yaml2phpser
 
 Also included is this utility to pretty-print JSON:
 
  pp-json
+
+And utilities for checking:
+
+ check-json
+ check-phpser
+ check-yaml
+
+=head1 FUNCTIONS
+
+
+None are exported by default, but they are exportable.
 
 =head1 SEE ALSO
 
@@ -61,6 +70,23 @@ L<JSON>
 L<PHP::Serialization>
 
 L<YAML>
+
+=head1 HOMEPAGE
+
+Please visit the project's homepage at L<https://metacpan.org/release/App-SerializeUtils>.
+
+=head1 SOURCE
+
+Source repository is at L<https://github.com/sharyanto/perl-App-SerializeUtils>.
+
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+http://rt.cpan.org/Public/Dist/Display.html?Name=App-SerializeUtils
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
 
 =head1 AUTHOR
 

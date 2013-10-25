@@ -8,7 +8,7 @@ use warnings;
 
 use JSON;
 
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 undef $/;
 print to_json(from_json(scalar <>), {pretty=>1});
@@ -20,13 +20,28 @@ __END__
 
 =pod
 
+=encoding utf-8
+
 =head1 NAME
 
 pp_json - Pretty-print JSON
 
-=head1 VERSION
+=head1 HOMEPAGE
 
-version 0.04
+Please visit the project's homepage at L<https://metacpan.org/release/App-SerializeUtils>.
+
+=head1 SOURCE
+
+Source repository is at L<https://github.com/sharyanto/perl-App-SerializeUtils>.
+
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+http://rt.cpan.org/Public/Dist/Display.html?Name=App-SerializeUtils
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
 
 =head1 AUTHOR
 
