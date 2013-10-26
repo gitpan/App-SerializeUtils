@@ -7,7 +7,7 @@ use warnings;
 use Data::Dump;
 use PHP::Serialization qw(unserialize);
 
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 undef $/;
 dd(unserialize(scalar <>));

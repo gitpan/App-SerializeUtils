@@ -4,7 +4,7 @@ use 5.010001;
 use strict;
 use warnings;
 
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 1;
 #ABSTRACT: Utilities for serialization tasks
@@ -55,11 +55,6 @@ And utilities for checking:
  check-json
  check-phpser
  check-yaml
-
-=head1 FUNCTIONS
-
-
-None are exported by default, but they are exportable.
 
 =head1 SEE ALSO
 

@@ -36,9 +36,6 @@ DESCRIPTION
      check-phpser
      check-yaml
 
-FUNCTIONS
-    None are exported by default, but they are exportable.
-
 SEE ALSO
     Data::Dump
 
