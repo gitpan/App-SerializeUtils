@@ -1,6 +1,10 @@
 NAME
     App::SerializeUtils - Utilities for serialization tasks
 
+VERSION
+    This document describes version 0.07 of App::SerializeUtils (from Perl
+    distribution App-SerializeUtils), released on 2014-05-22.
+
 SYNOPSIS
      $ script-that-produces-json | json2yaml
 
@@ -12,19 +16,39 @@ DESCRIPTION
 
      dd2json
      dd2phpser
+     dd2sereal
+     dd2storable
      dd2yaml
 
      json2dd
      json2phpser
+     json2sereal
+     json2storable
      json2yaml
 
      phpser2dd
      phpser2json
+     phpser2sereal
+     phpser2storable
      phpser2yaml
+
+     sereal2dd
+     sereal2json
+     sereal2phpser
+     sereal2storable
+     sereal2yaml
+
+     storable2dd
+     storable2json
+     storable2phpser
+     storable2sereal
+     storable2yaml
 
      yaml2dd
      yaml2json
      yaml2phpser
+     yaml2sereal
+     yaml2storable
 
     Also included is this utility to pretty-print JSON:
 
@@ -43,6 +67,10 @@ SEE ALSO
 
     PHP::Serialization
 
+    Sereal
+
+    Storable
+
     YAML
 
 HOMEPAGE
@@ -55,7 +83,7 @@ SOURCE
 
 BUGS
     Please report any bugs or feature requests on the bugtracker website
-    http://rt.cpan.org/Public/Dist/Display.html?Name=App-SerializeUtils
+    <https://rt.cpan.org/Public/Dist/Display.html?Name=App-SerializeUtils>
 
     When submitting a bug or request, please include a test-file or a patch
     to an existing test-file that illustrates the bug or desired feature.
@@ -64,7 +92,7 @@ AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2013 by Steven Haryanto.
+    This software is copyright (c) 2014 by Steven Haryanto.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.

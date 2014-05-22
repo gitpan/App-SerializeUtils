@@ -1,10 +1,16 @@
 Revision history for App-SerializeUtils
 
+0.07     2014-05-22 (SHARYANTO)
+
+         - [converter] Support Sereal and Storable formats (add sereal2*,
+           *2sereal, storable2*, *2storable scripts).
+
+
 0.06     2013-10-26 (SHARYANTO)
 
          - Add --xs, --syck options to check-yaml to pick YAML implementation.
 
-         - Add --xs, --pp options to check-yaml to pick JSON implementation.
+         - Add --xs, --pp options to check-json to pick JSON implementation.
 
 
 0.05     2013-10-25 (SHARYANTO)
